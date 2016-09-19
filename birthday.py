@@ -38,6 +38,28 @@ todaydate = datetime.today().day
 
 if todaymonth == 9:
     a="September"
+elif todaymonth == 10:
+    a="October"
+elif todaymonth == 11:
+    a="November"
+elif todaymonth == 12:
+    a="December"
+elif todaymonth == 1:
+    a="January"
+elif todaymonth == 2:
+    a="February"
+elif todaymonth == 3:
+    a="March"
+elif todaymonth == 4:
+    a="April"
+elif todaymonth == 5:
+    a="May"
+elif todaymonth == 6:
+    a="June"
+elif todaymonth == 7:
+    a="July"
+elif todaymonth == 8:
+    a="August"
 
 print(todaymonth,"/", todaydate,"/ 2016")
 name= (input("What is your name? "))
