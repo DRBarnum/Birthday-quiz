@@ -38,11 +38,12 @@ todaydate = datetime.today().day
 
 if todaymonth == 9:
     a="September"
+
 print(todaymonth,"/", todaydate,"/ 2016")
 name= (input("What is your name? "))
 month= (input("Hi " + name + " what was the name of the month were you born in? "))
 year= int(input("And what year were you born in, " + name + "? "))
-day= (input("And the day? "))
+day= int(input("And the day? "))
 if day== todaydate and month== a:
     print("Happy birthday!")
 elif month== "October" and day== "31":
