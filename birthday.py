@@ -36,12 +36,14 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
+if todaymonth == 9:
+    a="September"
 print(todaymonth,"/", todaydate,"/ 2016")
 name= (input("What is your name? "))
 month= (input("Hi " + name + " what was the name of the month were you born in? "))
 year= int(input("And what year were you born in, " + name + "? "))
 day= (input("And the day? "))
-if day== todaydate and month== todaymonth:
+if day== todaydate and month== a:
     print("Happy birthday!")
 elif month== "October" and day== "31":
     print("You were born on Halloween!")
@@ -52,7 +54,7 @@ elif month in("September", "October", "November", "9", "10", "11"):
         print(name + ", you are a fall baby of the Stone Age.")
     if year >= 1990 and year <= 1999:
         print(name + ", you are a fall baby of the nineties.")
-    else:
+    if year >= 2000:
         print(name + ", you are a fall baby of the two thousands.")
 elif month in("December", "January", "February", "12", "1", "2"):
     if year >=1980 and year <=1989:
@@ -61,7 +63,7 @@ elif month in("December", "January", "February", "12", "1", "2"):
         print(name + ", you are a winter baby of the Stone Age.")
     if year >= 1990 and year <= 1999:
         print(name + ", you are a winter baby of the nineties.")
-    else:
+    if year >= 2000:
         print(name + ", you are a winter baby of the two thousands.")
         
 elif month in("March", "April", "3", "4"):
@@ -71,7 +73,7 @@ elif month in("March", "April", "3", "4"):
         print(name + ", you are a spring baby of the Stone Age.")
     if year >= 1990 and year <= 1999:
         print(name + ", you are a spring baby of the nineties.")
-    else:
+    if year >= 2000:
         print(name + ", you are a spring baby of the two thousands.")
 else:
     if year >=1980 and year <=1989:
@@ -80,7 +82,7 @@ else:
         print(name + ", you are a summer baby of the Stone Age.")
     if year >= 1990 and year <= 1999:
         print(name + ", you are a summer baby of the nineties.")
-    else:
+    if year >= 2000:
         print(name + ", you are a summer baby of the two thousands.")
 
         
