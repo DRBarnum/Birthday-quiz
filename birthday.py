@@ -61,7 +61,7 @@ elif todaymonth == 7:
 elif todaymonth == 8:
     a="August"
 
-print(todaymonth,"/", todaydate,"/ 2016")
+
 name= (input("Hello, what is your name? "))
 month= (input("Hi " + name + ", what was the name of the month you were born in? "))
 year= int(input("And what year were you born in, " + name + "? "))
