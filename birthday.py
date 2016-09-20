@@ -63,7 +63,7 @@ elif todaymonth == 8:
 
 print(todaymonth,"/", todaydate,"/ 2016")
 name= (input("Hello, what is your name? "))
-month= (input("Hi " + name + ", what was the name of the month were you born in? "))
+month= (input("Hi " + name + ", what was the name of the month you were born in? "))
 year= int(input("And what year were you born in, " + name + "? "))
 day= int(input("And the day? "))
 if month== "October" and day== 31:
