@@ -66,10 +66,10 @@ name= (input("Hello, what is your name? "))
 month= (input("Hi " + name + ", what was the name of the month were you born in? "))
 year= int(input("And what year were you born in, " + name + "? "))
 day= int(input("And the day? "))
-if day== todaydate and month== a:
-    print("Happy birthday!")
-elif month== "October" and day== "31":
+if month== "October" and day== 31:
     print("You were born on Halloween!")
+elif day== todaydate and month== a:
+    print("Happy birthday!")
 elif month in("September", "October", "November", "9", "10", "11"):
     if year >=1980 and year <=1989:
         print(name + ", you are a fall baby of the eighties.")
